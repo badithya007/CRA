@@ -6,7 +6,7 @@ import plotly.express as px
 # 1. PAGE CONFIGURATION & ENTERPRISE UI THEME
 # ==========================================
 st.set_page_config(
-    page_title="Enterprise Customer Insights Matrix",
+    page_title="Insyte | Enterprise Insights Matrix",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -78,7 +78,7 @@ if "detected_industry_context" not in st.session_state:
     st.session_state.detected_industry_context = "App Software"
 
 with st.sidebar:
-    st.title("🔐 Intelligence Control Panel")
+    st.title("🔐 Insyte Control Center")
     st.markdown("---")
     bypass_auth = st.checkbox("Demo Override (Bypass Security Token)", value=True)
     
@@ -106,7 +106,7 @@ with st.sidebar:
 # 4. CORE INTERFACE RUNTIME SYSTEM
 # ==========================================
 if st.session_state.authenticated:
-    st.title("📊 Customer Feedback Analytics Engine")
+    st.title("📊 Insyte")
     st.caption("Enterprise Feedback Vectoring Platform | Auditable CSAT Mapping & Domain-Locked Remediation Blueprints")
     st.divider()
 
